@@ -64,7 +64,6 @@ class PriorityQueueTest {
 		testQueue.enqueue(6);
 		
 		assertFalse(testQueue.isEmpty(),"Metod inte implementerad");
-
 	}
 	
 	@Test
@@ -73,8 +72,6 @@ class PriorityQueueTest {
 		assertFalse(testQueue.isEmpty(),"Metod inte implementerad");
 		assertEquals( (double) testQueue.dequeue(), (double) 5,"Metod inte implementerad");
 		assertEquals( (double) testQueue.dequeue(), (double) 4,"Metod inte implementerad");
-		
-		
 	}
 	
 	@Test
@@ -84,8 +81,6 @@ class PriorityQueueTest {
 		assertEquals( (double) testQueue.getFront(), (double) 5,"Metod inte implementerad");
 		assertEquals( (double) testQueue.dequeue(), (double) 5,"Metod inte implementerad");
 		assertEquals( (double) testQueue.getFront(), (double) 4,"Metod inte implementerad");
-		
-
 	}
 	
 	@Test
@@ -95,7 +90,6 @@ class PriorityQueueTest {
 		assertThrows(PriorityQueueEmptyException.class, 
 				() -> testQueue.dequeue(), 
 				"Expected: PriorityQueueEmptyException");
-		
 	}
 	
 	@Test
